@@ -1,4 +1,4 @@
-import { Grid, GridItem, Show, useBreakpoint } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import { useBreakpointValue } from "@chakra-ui/react";
 import GameGrid from "./components/GameGrid.tsx";
 import Navbar from "./components/Navbar";
