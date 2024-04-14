@@ -2,6 +2,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import { useBreakpointValue } from "@chakra-ui/react";
 import GameGrid from "./components/GameGrid.tsx";
 import Navbar from "./components/Navbar";
+import GenreList from "./components/GenreList.tsx";
 
 function App() {
   const showAside = useBreakpointValue({ base: false, lg: true });
@@ -15,7 +16,11 @@ function App() {
       <GridItem area="nav">
         <Navbar />
       </GridItem>
-      {showAside && <GridItem area="aside">Aside</GridItem>}
+      {showAside && (
+        <GridItem area="aside">
+          <GenreList />
+        </GridItem>
+      )}
       <GridItem area="main">
         <GameGrid />
       </GridItem>
